@@ -7,15 +7,14 @@
     </div>
   
   
-    <!-- <div *ngFor="let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4"> -->
-      <div class="text-center col-sm-4 col-md-4 col-lg-4">
+<div *ngFor="let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4"> -->
       <circle-progress
-        [percent]="80"
+        [percent]="skill.porcentajeS"
         [radius]="85"
         [showUnits]="false"
-        [title]="'HTML'"
+        [title]="skill.nombreS"
         [showSubtitle]="true"
-        [subtitle]="'80'" 
+        [subtitle]="skill.nombreS" 
         [outerStrokeWidth]="16"
         [innerStrokeWidth]="5"
         [outerStrokeColor]="'#78C000'"
@@ -24,61 +23,8 @@
         [animationDuration]="600"
       >
       </circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="80"
-        [radius]="85"
-        [showUnits]="false"
-        [title]="'Ruby'"
-        [showSubtitle]="true"
-        [subtitle]="'80%'" 
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-      >
-      </circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="50"
-        [radius]="85"
-        [showUnits]="false"
-        [title]="'Java'"
-        [showSubtitle]="true"
-        [subtitle]="'50'" 
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-      >
-      </circle-progress>
-    </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-      <circle-progress
-        [percent]="70"
-        [radius]="85"
-        [showUnits]="false"
-        [title]="'Bootstrap'"
-        [showSubtitle]="true"
-        [subtitle]="'70%'" 
-        [outerStrokeWidth]="16"
-        [innerStrokeWidth]="5"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
-        [animation]="true"
-        [animationDuration]="600"
-      >
-      </circle-progress>
-    </div>
 
-  
-<!--       <div *ngIf="isLogged">
+      <div *ngIf="isLogged">
         <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
         <i class="bi bi-pencil"></i></button>
         </div>
@@ -86,6 +32,5 @@
       <div *ngIf="isLogged">
         <button class="btn btn-danger" (click)="delete(skill.id)">
         <i class="bi bi-trash"></i></button>
-        </div>
-   -->
-    </div>
+      </div>
+  </div>
