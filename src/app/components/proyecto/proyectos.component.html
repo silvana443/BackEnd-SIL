@@ -13,11 +13,9 @@
             <tr *ngFor="let Proyectos of proy">
           
               <td><h4>{{Proyectos.nombreP}}</h4></td>
-              <!-- <td>Se realizo una pagina en HTML, Css, Bootstrap, cuenta con formato de carrusel utilizando formato de imagenes de jpg
-              <td> -->
                 <td>{{Proyectos.descripcionP}}</td>
                 <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-                    <img src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg" class="img-fluid img-proyecto" >
+                    <img src={{Proyectos.imgP}} class="img-fluid img-proyecto" >
                 </div>
           
               <td *ngIf="isLogged">

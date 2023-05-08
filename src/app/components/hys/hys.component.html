@@ -7,7 +7,7 @@
     </div>
   
   
-<div *ngFor="let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4"> -->
+<div *ngFor="let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4">
       <circle-progress
         [percent]="skill.porcentajeS"
         [radius]="85"
@@ -27,7 +27,7 @@
       <div *ngIf="isLogged">
         <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
         <i class="bi bi-pencil"></i></button>
-        </div>
+      </div>
       
       <div *ngIf="isLogged">
         <button class="btn btn-danger" (click)="delete(skill.id)">
