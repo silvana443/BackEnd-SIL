@@ -12,7 +12,7 @@ export class SProyectosService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Proyectos[]>{
+  public lista(): Observable<Proyectos[]>{ 
     return this.httpClient.get<Proyectos[]>(this.proyURL + 'lista');
   }
 
