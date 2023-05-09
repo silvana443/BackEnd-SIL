@@ -7,7 +7,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  proyURL = 'hhttps://backend-sss.onrender.com/proy/';
+  proyURL = 'https://backend-sss.onrender.com/proy/';
   //proyURL = 'http://localhost:8080/proy/'
 
   constructor(private httpClient: HttpClient) { }
